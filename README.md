@@ -1,4 +1,8 @@
-# JetBrains ReSharper action for GitHub Actions
+# JetBrains ReSharper Action for GitHub Actions using .NET5
+
+This is a fork of [glassechidna/resharper-action](https://github.com/glassechidna/resharper-action) that uses 
++ 2020 version of Resharper
++ .NET5 
 
 [JetBrains ReSharper][jetbrains] is the best thing to happen to .Net developers
 since .Net. JetBrains Rider is my favourite IDE. When JetBrains released their
@@ -28,7 +32,7 @@ jobs:
         uses: actions/checkout@v2
       
       - name: resharper
-        uses: glassechidna/resharper-action@master
+        uses: Hochfrequenz/resharper-action@master
         with:
           solution: HelloWorld.sln
 ```
